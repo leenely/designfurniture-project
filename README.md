@@ -14,4 +14,4 @@
 - Склонируйте шаблон одной командой из командной строки (команда выкачает только нужные файлы, Readme будет игнорирован):
 	<pre>git clone https://github.com/Myakoo/designfurniture-project.git .; rm -rf trunk readme.md .git dist</pre>
 - Загрузите архив с вёрсткой путём нажатия кнопки "Download ZIP":
-	<img src="https://raw.githubusercontent.com/Myakoo/designfurniture-project/master/.github/images/download-button.png" alt="Download Image">
+	<img src="https://raw.githubusercontent.com/Myakoo/designfurniture-project/master/.github/images/download_button.png" alt="Download Image">
