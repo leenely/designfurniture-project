@@ -67,7 +67,7 @@
 /* Avenir */
 
 @font-face {
-	font-family: 'Avenir';
+	font-family: 'Avenir Next';
 	font-style: normal;
 	font-weight: 400;
 	src: local(''),
@@ -76,7 +76,7 @@
 }
 
 @font-face {
-	font-family: 'Avenir';
+	font-family: 'Avenir Next';
 	font-style: normal;
 	font-weight: 500;
 	src: local(''),
@@ -85,7 +85,7 @@
 }
 
 @font-face {
-	font-family: 'Avenir';
+	font-family: 'Avenir Next';
 	font-style: normal;
 	font-weight: 600;
 	src: local(''),

@@ -1,3 +1,103 @@
+/* Основная настройка */
+
 body {
-	font-family: "Playfair Display", sans-serif;
+	font-family: "Open Sans", sans-serif;
+}
+/* 
+h1, h2, h3, h4, h5, a, p, nav {
+	margin: 0;
+} */
+
+* {
+	box-sizing: border-box;
+}
+
+/* Переменные */
+
+:root {
+	--main-font-color: #303032; /* Основной цвет текста */
+	--focus-color: #4d4d50; /* Цвет текста при фокусе */
+	--second-font-color: #444348; /* Дополнительный цвет текста */
+	--transparent-font-color: #979798; /* Цвет текста невыбранной категории */
+}
+
+/* Стилизация страницы */
+
+
+/* Хэдер */
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header-flex {
+	background-color: #f279b5;
+	padding: 90px 0 70px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-flex__left {
+	display: flex;
+	flex-direction: row;
+}
+
+.header-flex__left-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 139px;
+}
+
+.header-flex__left a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 19px;
+	color: var(--main-font-color);
+}
+
+.header-flex__left a:not(:first-child) {
+	margin-left: 60px;
+}
+
+.header-flex__left a:hover {
+	text-decoration: underline;
+	color: var(--focus-color)
+}
+
+.header-flex__right {
+	display: flex;
+	align-items: center;
+}
+
+.header-flex__right-search, .header-flex__right-bin {
+	cursor: pointer;
+}
+
+.header-flex__right-bin img {
+	margin-left: 22px;
+}
+
+.header-flex__right-bin__count {
+	position: absolute;
+	right: 366px;
+	top: 92px;
+	width: 18px;
+	height: 18px;
+	background-color: #313133;
+	border-radius: 100%;
+}
+
+.header-flex__right-bin__count p {
+	position: absolute;
+	top: -12px;
+	right: 5px;
+	color: white;
+	font-family: Avenir Next;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
 }
