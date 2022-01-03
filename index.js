@@ -8,3 +8,14 @@ var swiper = new Swiper(".mySwiper", {
 	  },
 	},
  });
+
+ var secondSwiper = new Swiper(".mySwiper2", {
+	loop: true,
+	pagination: {
+		el: ".swiper-pagination-original",
+	 },
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+ });
