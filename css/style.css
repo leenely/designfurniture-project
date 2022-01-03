@@ -20,6 +20,18 @@ h1, h2, h3, h4, h5, a, p, nav {
 	--focus-color: #4d4d50; /* Цвет текста при фокусе */
 	--second-font-color: #444348; /* Дополнительный цвет текста */
 	--transparent-font-color: #979798; /* Цвет текста невыбранной категории */
+
+
+	--swiper-pagination-bullet-size: 8px;
+  	--swiper-pagination-bullet-width: 8px;
+  	--swiper-pagination-bullet-height: 8px;
+  	--swiper-pagination-bullet-inactive-color: #000;
+  	--swiper-pagination-bullet-inactive-opacity: 0.2;
+ 	--swiper-pagination-bullet-opacity: 1;
+  	--swiper-pagination-bullet-horizontal-gap: 4px;
+  	--swiper-pagination-bullet-vertical-gap: 6px;
+	--swiper-theme-color: #007aff;
+	--swiper-navigation-size: 44px;
 }
 
 /* Стилизация страницы */
@@ -178,9 +190,9 @@ h1, h2, h3, h4, h5, a, p, nav {
 	margin-top: 22px;
 }
 
-/*  */
+/* Перенастройка Слайдера */
 
-.swiper-pagination-bullet {
+.mySwiper .swiper-pagination-bullet {
 	font-family: Playfair Display;
 	font-size: 20px;
 	line-height: 145%;
@@ -188,7 +200,6 @@ h1, h2, h3, h4, h5, a, p, nav {
 	margin: var(--swiper-pagination-bullet-vertical-gap,20px) 0 !important;
 	--swiper-theme-color: transparent;
 	background: transparent;
-	/* background-color: #e3f279; */
 	width: auto;
 	height: auto;
 	border-radius: 0;
@@ -198,13 +209,13 @@ h1, h2, h3, h4, h5, a, p, nav {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.swiper-pagination-bullet-active {
+.mySwiper .swiper-pagination-bullet-active {
 	color: black;
 	width: 61px;
 	font-size: 40px;
 }
 
-.swiper-pagination-bullet-active::after {
+.mySwiper .swiper-pagination-bullet-active::after {
 	content:""; 
     background: black;
 	 right: 0;
@@ -213,8 +224,18 @@ h1, h2, h3, h4, h5, a, p, nav {
     width: 2px;
 }
 
+.mySwiper .swiper-pagination-bullet-active {
+	color: black;
+	width: 61px;
+	font-size: 40px;
+}
+
 
 /* Новинки */
+
+.new {
+	margin-top: 140px;
+}
 
 .new-flex__left {
 	width: 614px;
@@ -311,4 +332,129 @@ h1, h2, h3, h4, h5, a, p, nav {
 	background-color: white;
 	width: 570px;
 	height: 614px;
+}
+
+
+/* Отзывы */
+
+/* Переназначение стилей Слайдера */
+
+.swiper-pagination-original {
+	position: absolute;
+	text-align: center;
+	transition: 300ms opacity;
+	transform: translate3d(0, 0, 0);
+	z-index: 10;
+}
+
+.swiper-pagination-original-bullet {
+
+	cursor: pointer;
+
+	transform: scale(0.33);
+	position: relative;
+	display: inline-block;
+
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	border-radius: 50%;
+	background: var(--swiper-pagination-bullet-inactive-color,#000);
+	opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+}
+
+
+
+button.swiper-pagination-original-bullet {
+	border: none;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	-webkit-appearance: none;
+			  appearance: none;
+ }
+
+.mySwiper2 .swiper-pagination-bullet {
+	border: 1px solid #B3B3B3;
+	opacity: 1;
+	background: transparent;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active {
+	background: #B3B3B3;
+}
+
+.mySwiper2 {
+	height: 408px;
+	background-color: #f9fdff;
+}
+
+.swiper-slide {
+	background-color: #f9fdff !important;
+}
+
+.swiper-button-prev {
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-prev:after {
+	content: url(../img/Reviews/prev-arrow.svg);
+	position: absolute;
+	top: -50%;
+}
+
+.swiper-button-next {
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next:after {
+	content: url(../img/Reviews/next-arrow.svg);
+	position: absolute;
+	top: -50%;
+}
+
+.mySwiper2 .swiper-button-disabled {
+	opacity: 1;
+}
+
+.reviews-item {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -93px;
+	margin-left: -326px;
+	width: 653px;
+	text-align: center;
+}
+
+.reviews-item img {
+	margin-bottom: 25px;
+}
+
+.reviews-item__name {
+	color: var(--second-font-color);
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	line-height: 24.7px;
+}
+
+.reviews-item__work {
+	color: var(--second-font-color);
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 154.36%;
+	margin-bottom: 20px;
+}
+
+.reviews-item__review {
+	color: var(--second-font-color);
+	font-style: italic;
+	font-size: 16px;
+	line-height: 154.36%;
 }
