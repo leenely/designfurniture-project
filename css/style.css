@@ -319,7 +319,7 @@ h1, h2, h3, h4, h5, a, p, nav {
 }
 
 .new-flex__left-1__line {
-	background: #303032;
+	background: var(--main-font-color);
 	width: 90px;
 	height: 4px;
 }
@@ -345,6 +345,7 @@ h1, h2, h3, h4, h5, a, p, nav {
 	transition: 300ms opacity;
 	transform: translate3d(0, 0, 0);
 	z-index: 10;
+	bottom: 50px !important;
 }
 
 .swiper-pagination-original-bullet {
@@ -385,12 +386,13 @@ button.swiper-pagination-original-bullet {
 }
 
 .mySwiper2 {
-	height: 408px;
+	height: 478px;
 	background-color: #f9fdff;
+	margin-bottom: 100px;
 }
 
 .swiper-slide {
-	background-color: #f9fdff !important;
+	background-color: transparent !important;
 }
 
 .swiper-button-prev {
@@ -457,4 +459,142 @@ button.swiper-pagination-original-bullet {
 	font-style: italic;
 	font-size: 16px;
 	line-height: 154.36%;
+}
+
+
+/* Последний шанс */
+
+/* Переназначение стилей Слайдера */
+
+.mySwiper3 .swiper-pagination {
+	text-align: start;
+	top: 37px;
+}
+
+.mySwiper3 .swiper-wrapper {
+	margin-top: 165px;
+}
+
+.mySwiper3 .swiper-pagination-bullet-active {
+	background: transparent;
+	text-decoration: underline;
+	color: black !important;
+}
+
+.mySwiper3 .swiper-pagination-bullet {
+	background: transparent;
+	opacity: 1;
+	color: var(--transparent-font-color);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 25px;
+	margin: 70px 100px 0 0 !important;
+}
+
+.mySwiper3 .swiper-pagination-bullet:hover {
+	color: var(--focus-color)
+}
+
+/* Стилизация section.chance */
+
+.chance__h2-text {
+	position: absolute;
+	z-index: 1;
+	margin-bottom: 70px;
+}
+
+.chance__h2-text h2 {
+	font-family: Playfair Display;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 37px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--main-font-color);
+	margin-bottom: 7px;
+}
+
+.chance__h2-text__decoration {
+	background: var(--main-font-color);
+	width: 90px;
+	height: 4px;
+}
+
+.chance-flex__items {
+	display: flex;
+	flex-direction: row;
+}
+
+.chance-flex__item {
+	background-color: white;
+	width: 209px;
+	height: 355px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.chance-flex__item:not(:first-child) {
+	margin-left: 31px;
+	width: 209px;
+}
+
+
+.caramel {
+	margin-top: 16px;
+}
+
+.cloud {
+	margin-top: 13px;
+	margin-left: 12px;
+}
+
+.owl {
+	margin-top: 22px;
+	margin-left: 42px;
+}
+
+.maya {
+	margin-left: 23px;
+	margin-top: -17px;
+}
+
+.messi {
+	margin-top: 19px;
+	margin-left: 47px;
+}
+
+.chance-flex__items p {
+	margin-left: 27px;
+}
+
+.chance-flex__item-name {
+	margin-top: 27px;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.chance-flex__item-cost {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 38px;
+	color: var(--main-font-color)
+}
+
+.chance-flex__item-cost span {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	text-decoration-line: line-through;
+	color: var(--transparent-font-color)
+}
+
+.chance:before {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 545px;
+	background: #FAECE9;
+	position: absolute;
+	top: 2010px;
+	right: 888px;
+	z-index: 1;
 }
