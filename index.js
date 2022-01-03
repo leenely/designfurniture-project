@@ -19,3 +19,17 @@ var swiper = new Swiper(".mySwiper", {
 	  prevEl: ".swiper-button-prev",
 	},
  });
+
+ var thirdSwiper = new Swiper(".mySwiper3", {
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	  renderBullet: function (index, className) {
+		  switch(index + 1) {
+			  case 1: return '<span class="' + className + '">' + 'Стулья' + "</span>";
+			  case 2: return '<span class="' + className + '">' + 'Диваны' + "</span>";
+			  case 3: return '<span class="' + className + '">' + 'Кресла' + "</span>";
+		  }
+	  },
+	},
+ });
