@@ -282,6 +282,12 @@ body:before {
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
 }
 
+.new-flex__left-item:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	z-index: 2;
+	cursor: pointer;
+}
+
 .new-flex__left-item-unique {
 	background: #FAECE9;
 	box-shadow: 0;
@@ -351,6 +357,11 @@ body:before {
 	height: 614px;
 }
 
+.new-flex__right:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	z-index: 2;
+	cursor: pointer;
+}
 
 /* Отзывы */
 
