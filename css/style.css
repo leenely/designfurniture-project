@@ -91,6 +91,10 @@ body:before {
 	flex-direction: row;
 }
 
+.header-flex__left img {
+	cursor: pointer;
+}
+
 .header-flex__left-nav {
 	display: flex;
 	flex-direction: row;
@@ -727,8 +731,15 @@ button.swiper-pagination-original-bullet {
 	margin-left: 50px;
 }
 
-.footer-left__bottom p {
+.footer-left__bottom a {
 	display: flex;
+	text-decoration: none;
+	color: var(--main-font-color);
+}
+
+.footer-left__bottom a:hover {
+	text-decoration: underline;
+	color: var(--focus-color)
 }
 
 .footer-left__bottom img {
@@ -738,6 +749,8 @@ button.swiper-pagination-original-bullet {
 .footer-bottom hr {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+
 
 .footer-bottom p {
 	text-align: end;
