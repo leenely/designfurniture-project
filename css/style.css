@@ -745,3 +745,18 @@ button.swiper-pagination-original-bullet {
 	opacity: 0.2;
 	padding: 10px 0;
 }
+
+
+/* Стилизация текста бургер-меню */
+
+.nav-text {
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0.13em;
+	text-transform: uppercase;
+}
+
+.mb-81px {
+	margin-bottom: 81px;
+}
