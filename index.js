@@ -1,4 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
+	noSwiping: true,
+	noSwipingClass: 'swiper-slide',
 	direction: "vertical",
 	pagination: {
 		el: ".swiper-pagination",
@@ -11,6 +13,9 @@ var swiper = new Swiper(".mySwiper", {
 
 var secondSwiper = new Swiper(".mySwiper2", {
 	loop: true,
+	autoplay: {
+		delay: 10000,
+	 },
 	pagination: {
 		el: ".swiper-pagination-original",
 	},
@@ -21,6 +26,8 @@ var secondSwiper = new Swiper(".mySwiper2", {
 });
 
 var thirdSwiper = new Swiper(".mySwiper3", {
+	noSwiping: true,
+	noSwipingClass: 'swiper-slide',
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
