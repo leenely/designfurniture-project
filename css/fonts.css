@@ -87,7 +87,9 @@
 @font-face {
 	font-family: 'Avenir Next';
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	src: local(''),
-		  url('../fonts/Avenir/AvenirNext-DemiBold.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		  url('../fonts/Avenir/AvenirNextCyr-Demi.woff2') format('woff2'),
+		  url('../fonts/Avenir/AvenirNextCyr-Demi.woff') format('woff'),
+		  url('../fonts/Avenir/AvenirNextCyr-Demi.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
