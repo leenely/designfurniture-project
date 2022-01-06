@@ -127,7 +127,16 @@
 	}
 
 	.new-flex__right img {
-		width: 204px
+		width: 204px;
+		height: 237px;
+	}
+
+	.new-flex__right p {
+		font-size: 18px;
+	}
+
+	.new-flex__right span {
+		font-size: 24px;
 	}
 
 	.footer-left__bottom {
@@ -647,7 +656,7 @@
 	}
 
 	.mobile-slider__item-bottom button {
-		padding: 18px 131px 18px 131px;
+		padding: 18px 131px 18px 130px;
 	}
 
 	.mySwiper5 .swiper-pagination-bullet:not(:last-child) {
@@ -656,6 +665,10 @@
 
 	.chance-mobile__item {
 		margin-left: 24px;
+	}
+
+	.nav.expanded {
+		left: 191px;
 	}
 
 	.new-flex__right {
