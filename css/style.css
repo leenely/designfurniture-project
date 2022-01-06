@@ -516,15 +516,16 @@ button.swiper-pagination-original-bullet {
 .reviews-item__name {
 	color: var(--second-font-color);
 	font-family: "Avenir Next", sans-serif;
+	font-weight: 700;
 	font-size: 16px;
 	line-height: 24.7px;
 }
 
 .reviews-item__work {
 	color: var(--second-font-color);
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 154.36%;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24.62px;
 	margin-bottom: 20px;
 }
 
