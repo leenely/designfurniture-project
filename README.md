@@ -6,7 +6,7 @@
 <p>Помогаем людям в создании первого впечатления</p>
 
 <p>
-	<img src="https://raw.githubusercontent.com/leenely/designfurniture-project/master/.github/images/preview.jpg" alt="Preview">
+	<img src="https://github.com/leenely/designfurniture-project/blob/master/.github/images/preview.jpg" alt="Preview">
 </p>
 
 **Callium** - мебель – это вещь - создающая первое впечатление о Вашем доме. **Мы поможем Вам сложить правильное впечатление!** <br>
